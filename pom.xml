@@ -14,10 +14,7 @@
                 <project.build.sourceEncoding>UTE-8</project.build.sourceEncoding>
 		<maven.copiler.source>1.8</maven.compiler.source>
 		<maven.copiler.target>1.8</maven.compiler.target>
-		
-			
-			
-			
+				
 
 	</properties>
 	<dependencies>
