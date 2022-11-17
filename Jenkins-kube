@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'javahome2', url: 'https://github.com/srinicloud87/myweb.git'
+                git credentialsId: 'javahome2', url: 'https://github.com/nasareddydevops/myweb.git'
             }
         }
         stage("Maven Build"){
@@ -46,7 +46,7 @@ pipeline{
         stage('Push Docker Image'){
              steps{
                   withCredentials([string(credentialsId: 'DOCKER_HUB_CREDENTIALS', variable: 'DOCKER_HUB_CREDENTIALS')]) {
-                      sh "docker login -u raghunadh181 -p ${DOCKER_HUB_CREDENTIALS}"
+                      sh "docker login -u nasareddy444 -p ${DOCKER_HUB_CREDENTIALS}"
             }
             sh 'docker push raghunadh181/spring-boot-mongo'
         }
